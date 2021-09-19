@@ -64,6 +64,11 @@ const Header = () => {
                       name="_autoresponse"
                       value="Thanks for contacting me! I will get to you as soon as possible."
                     />
+                    <input
+                      type="hidden"
+                      name="_next"
+                      value="https://tomaseke.github.io/Portfolio/"
+                    />
                     <button className="button send-button">SEND</button>
                   </form>
                 </div>
