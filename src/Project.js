@@ -8,8 +8,12 @@ const Project = ({
 
   if (isModalOpen) {
     document.body.classList.add("active-modal");
-  } else {
+    document.getElementById("hamburger-menu").style.display = "none";
+  }
+  if (!isModalOpen && document.getElementById("hamburger-menu")) {
     document.body.classList.remove("active-modal");
+    document.getElementById("hamburger-menu").style.display = "initial";
+    // REFACTOR WITH REF HOOK
   }
 
   return (

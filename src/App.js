@@ -12,7 +12,7 @@ function App() {
       <div className="hero-image-container">
         <HeroImage />
       </div>
-      <div className="section">
+      <div className="section" id="projects">
         <h1 id="projects">PROJECTS</h1>
         <hr />
         <section className="projects-container">

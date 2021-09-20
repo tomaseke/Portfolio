@@ -1,37 +1,61 @@
 import { React, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import styles from "./App.css";
 
 const Header = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+  let hamburgerColor, headerDisplay;
+
   if (isContactOpen) {
     document.body.classList.add("active-modal");
-  } else {
+    document.getElementById("hamburger-menu").style.display = "none";
+  }
+  if (!isContactOpen && document.getElementById("hamburger-menu")) {
     document.body.classList.remove("active-modal");
+    document.getElementById("hamburger-menu").style.display = "initial";
+    // REFACTOR THIS WITH REF
   }
 
-  function handleChange(e) {
-    this.setState({ value: e.target.value });
+  if (isHamburgerOpen && window.innerWidth < 1085) {
+    hamburgerColor = { color: "white" };
+    headerDisplay = { display: "initial" };
+  }
+  if (!isHamburgerOpen && window.innerWidth < 1085) {
+    hamburgerColor = { color: "black" };
+    headerDisplay = { display: "none" };
   }
 
   return (
-    <div>
-      <header>
-        <div className="nav-container">
-          <ul>
-            <a href="#about">
-              <li>About</li>
-            </a>
-            <a href="#projects">
-              <li>Portfolio</li>
-            </a>
+    <>
+      <div
+        id="hamburger-menu"
+        style={hamburgerColor}
+        onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}
+      >
+        ☰
+      </div>
+      <header id="header" style={headerDisplay}>
+        <ul>
+          <a href="#about" onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>
+            <li className="hamburger-menu-border">About</li>
+          </a>
+          <a
+            href="#projects"
+            onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}
+          >
+            <li>Portfolio</li>
+          </a>
+          <a onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}>
             <li
+              className="hamburger-menu-border hamburger-menu-border-bottom"
               style={{ cursor: "pointer" }}
               onClick={() => setIsContactOpen(!isContactOpen)}
             >
               Contact
             </li>
-          </ul>
-        </div>
+          </a>
+        </ul>
       </header>
       <AnimatePresence>
         {isContactOpen && (
@@ -83,7 +107,7 @@ const Header = () => {
           </>
         )}
       </AnimatePresence>
-    </div>
+    </>
   );
 };
 
