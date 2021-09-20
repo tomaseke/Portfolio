@@ -40,11 +40,11 @@ const About = () => {
           >
             Contact me
           </button>
-          <button className="about-buttons button">
-            <a href={CV} target="_blank" className="a-buttons">
+          <form action={CV} method="get" target="_blank" id="download-cv-form">
+            <button className="button a-buttons download-cv-button">
               Download CV
-            </a>
-          </button>
+            </button>
+          </form>
         </div>
       </section>
       <AnimatePresence>

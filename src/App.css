@@ -132,6 +132,15 @@ hr {
   max-width: 80vw;
 }
 
+#download-cv-form {
+  width: 47%;
+  padding: 0;
+}
+
+.download-cv-button {
+  width: 100%;
+}
+
 p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -319,3 +328,5 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: rgb(255, 255, 255);
   transition: background-color 5000s ease-in-out 1s;
 }
+
+/*media queries under */
