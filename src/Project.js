@@ -10,7 +10,16 @@ const Project = ({
     document.body.classList.add("active-modal");
     document.getElementById("hamburger-menu").style.display = "none";
   }
-  if (!isModalOpen && document.getElementById("hamburger-menu")) {
+
+  if (!isModalOpen) {
+    document.body.classList.remove("active-modal");
+  }
+
+  if (
+    !isModalOpen &&
+    document.getElementById("hamburger-menu") &&
+    window.innerWidth <= 1085
+  ) {
     document.body.classList.remove("active-modal");
     document.getElementById("hamburger-menu").style.display = "initial";
     // REFACTOR WITH REF HOOK
