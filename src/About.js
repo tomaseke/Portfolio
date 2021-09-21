@@ -6,11 +6,15 @@ const About = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
   if (isContactOpen) {
     document.body.classList.add("active-modal");
-    document.getElementById("hamburger-menu").style.display = "none";
+    // document.getElementById("hamburger-menu").style.display = "none";
   }
-  if (!isContactOpen && document.getElementById("hamburger-menu")) {
+  if (
+    !isContactOpen
+    // document.getElementById("hamburger-menu") &&
+    // window.innerWidth < 1085
+  ) {
     document.body.classList.remove("active-modal");
-    document.getElementById("hamburger-menu").style.display = "initial";
+    // document.getElementById("hamburger-menu").style.display = "initial";
     // REFACTOR THIS WITH REF HOOK
   }
 

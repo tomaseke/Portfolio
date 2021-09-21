@@ -344,9 +344,22 @@ select:-webkit-autofill:focus {
     font-size: 0.8em;
   }
 
-  .hero-image-container {
-    overflow-x: clip;
+  @supports (overflow-x: clip) {
+    .hero-image-container {
+      overflow-x: clip;
+    }
   }
+  @supports not (overflow-x: clip) {
+    .hero-image-container {
+      clip: auto;
+      overflow-x: initial;
+    }
+  }
+
+  /* .hero-image-container {
+    overflow-x: clip;
+    clip: auto;
+  } */
 
   .gif-container {
     display: none;
@@ -398,6 +411,10 @@ select:-webkit-autofill:focus {
 
   svg {
     transform: scale(1.5);
+    -webkit-transform: scale(1.5); /* Safari & Chrome */
+    -moz-transform: scale(1.5); /* Firefox */
+    -ms-transform: scale(1.5); /* Internet Explorer */
+    -o-transform: scale(1.5); /* Opera */
   }
 }
 
@@ -409,18 +426,26 @@ select:-webkit-autofill:focus {
 
   svg {
     transform: scale(2);
+    -webkit-transform: scale(2); /* Safari & Chrome */
+    -moz-transform: scale(2); /* Firefox */
+    -ms-transform: scale(2); /* Internet Explorer */
+    -o-transform: scale(2); /* Opera */
     margin-top: 0;
   }
 }
 
 /*hero-image scale in range 400-320px*/
-@media only screen and (max-width: 400px) and (min-width: 320px) {
+@media only screen and (max-width: 400px) {
   .hero-image-container {
     margin-bottom: 25vh;
   }
 
   svg {
     transform: scale(2.5);
+    -webkit-transform: scale(2.5); /* Safari & Chrome */
+    -moz-transform: scale(2.5); /* Firefox */
+    -ms-transform: scale(2.5); /* Internet Explorer */
+    -o-transform: scale(2.5); /* Opera */
     margin-top: 30px;
   }
 }
@@ -459,6 +484,14 @@ select:-webkit-autofill:focus {
     text-align: center;
   }
 
+  @-moz-document url-prefix() {
+    /*fixes the bug that the project nav link is bigger*/
+
+    ul {
+      display: block;
+    }
+  }
+
   li:hover {
     border-color: white;
   }
@@ -470,13 +503,5 @@ select:-webkit-autofill:focus {
 
   .hamburger-menu-border-bottom {
     border-bottom: none;
-  }
-
-  .hamburger-menu-open {
-    color: white;
-  }
-
-  .hamburger-menu-close {
-    color: black;
   }
 }
