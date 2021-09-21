@@ -44,19 +44,18 @@ ul {
   display: flex;
   -webkit-box-pack: right;
   -ms-flex-pack: right;
-  justify-content: right;
+  justify-content: flex-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  grid-gap: 6%;
-  gap: 6%;
   margin-top: 30px;
   margin-right: 4.5vw;
 }
 
 a {
   text-decoration: none;
+  margin-left: 6%;
 }
 
 li {
@@ -88,7 +87,7 @@ h1 {
 hr {
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
 }
 
 #about-hr {
@@ -107,13 +106,12 @@ hr {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 40px calc((100% - (255px * 3)) / 4);
-  gap: 120px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .project-container {
-  width: 250px;
+  max-width: 250px;
+  min-width: 250px;
   height: 250px;
   background-color: #bfbfbf;
   display: -webkit-box;
@@ -131,6 +129,7 @@ hr {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border-radius: 10px;
+  margin: 60px;
 }
 
 .project-title {
@@ -405,7 +404,7 @@ select:-webkit-autofill:focus {
 /*dont show video for screens under 1085px*/
 @media only screen and (max-width: 1085px) {
   body {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   @supports (overflow-x: clip) {
@@ -420,10 +419,9 @@ select:-webkit-autofill:focus {
     }
   }
 
-  /* .hero-image-container {
-    overflow-x: clip;
-    clip: auto;
-  } */
+  a {
+    margin-left: 0;
+  }
 
   .gif-container {
     display: none;

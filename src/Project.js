@@ -54,14 +54,7 @@ const Project = ({
                 <div className="right-side-container">
                   <div className="description-container">
                     <h1 className="description-title">Description:</h1>
-                    <div className="description-p">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatibus nesciunt quisquam suscipit iusto ducimus
-                      temporibus, fugiat reiciendis voluptatem. Laborum vero
-                      voluptatum, earum doloribus nihil praesentium neque
-                      corrupti perspiciatis quas eveniet dolorum porro
-                      temporibus aspernatur voluptate ull
-                    </div>
+                    <div className="description-p">{description}</div>
                   </div>
                   <div className="modal-buttons-container">
                     <form className="project-buttons">

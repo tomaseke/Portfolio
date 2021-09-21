@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import styles from "./App.css";
 
 const Header = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);

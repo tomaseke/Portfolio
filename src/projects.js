@@ -8,7 +8,8 @@ import ticTacToe from "./Tic-tac-toe.webm";
 const projects = [
   {
     name: "3D scans website",
-    description: "",
+    description:
+      "I have created this website for my side gig. It's a single page application that answers all the possible questions that the potential customer could have. The main technologies behind this website are HTML5 and CSS3. I also used javascript to handle form submit and to add logic to the responsive navbar. I utilized firebase database to store the messages.",
     video: scans,
     github: "https://github.com/tomaseke/3Dsken",
     githubPages: "https://www.3dskeny.cz/",
