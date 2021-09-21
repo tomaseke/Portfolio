@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3431bc65.chunk.css",
-    "main.js": "/Portfolio/static/js/main.1a94d243.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.1a94d243.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.318eb658.chunk.css",
+    "main.js": "/Portfolio/static/js/main.709995e7.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.709995e7.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.ef4a458f.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.ef4a458f.js.map",
-    "static/js/2.b27f536e.chunk.js": "/Portfolio/static/js/2.b27f536e.chunk.js",
-    "static/js/2.b27f536e.chunk.js.map": "/Portfolio/static/js/2.b27f536e.chunk.js.map",
+    "static/js/2.a701e143.chunk.js": "/Portfolio/static/js/2.a701e143.chunk.js",
+    "static/js/2.a701e143.chunk.js.map": "/Portfolio/static/js/2.a701e143.chunk.js.map",
     "static/js/3.93a138a0.chunk.js": "/Portfolio/static/js/3.93a138a0.chunk.js",
     "static/js/3.93a138a0.chunk.js.map": "/Portfolio/static/js/3.93a138a0.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.3431bc65.chunk.css.map": "/Portfolio/static/css/main.3431bc65.chunk.css.map",
-    "static/js/2.b27f536e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.b27f536e.chunk.js.LICENSE.txt",
+    "static/css/main.318eb658.chunk.css.map": "/Portfolio/static/css/main.318eb658.chunk.css.map",
+    "static/js/2.a701e143.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.a701e143.chunk.js.LICENSE.txt",
     "static/media/3D-scans.1ea7bb31.webm": "/Portfolio/static/media/3D-scans.1ea7bb31.webm",
-    "static/media/CV.0b03e03e.pdf": "/Portfolio/static/media/CV.0b03e03e.pdf",
+    "static/media/CV.b6b0a921.pdf": "/Portfolio/static/media/CV.b6b0a921.pdf",
     "static/media/Calculator.6edbefd9.webm": "/Portfolio/static/media/Calculator.6edbefd9.webm",
     "static/media/Number-guessing-game.586c226d.webm": "/Portfolio/static/media/Number-guessing-game.586c226d.webm",
     "static/media/Random-movie-generator.5938f7a9.webm": "/Portfolio/static/media/Random-movie-generator.5938f7a9.webm",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ef4a458f.js",
-    "static/js/2.b27f536e.chunk.js",
-    "static/css/main.3431bc65.chunk.css",
-    "static/js/main.1a94d243.chunk.js"
+    "static/js/2.a701e143.chunk.js",
+    "static/css/main.318eb658.chunk.css",
+    "static/js/main.709995e7.chunk.js"
   ]
 }
