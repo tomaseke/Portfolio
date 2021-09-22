@@ -1,8 +1,9 @@
 import { useState, React } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+// import ReactHtmlParser from "react-html-parser";
 
 const Project = ({
-  project: { name, description, video, github, githubPages },
+  project: { name, description, video, github, githubPages, emoji },
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 

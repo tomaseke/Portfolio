@@ -25,20 +25,19 @@ const About = () => {
       <section className="about-container">
         <div className="p-container">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            dolore laboriosam quibusdam sit! Esse incidunt repellendus est?
-            Aliquam explicabo, exercitationem ratione sed dignissimos
-            praesentium velit nostrum culpa nisi atque suscipit blanditiis
-            perspiciatis totam, laudantium consequuntur cupiditate minima facere
-            fugiat aut? Aliquam optio eveniet possimus, quis inventore
-            voluptatem! Eveniet, saepe atque.
+            I'm a self-taught frontend developer. I have a proficient
+            understanding of HTML, CSS and Javascript and I love learning new
+            tools and technologies that improve my efficiency as a developer (as
+            one of my favorite quote says "To a man with hammer, everything
+            looks like a nail."). At the time of writing, I am improving my
+            knowledge of React and a little bit of Node and Express to better
+            understand the frontend-backend dynamic. I am also on my ongoing
+            quest to write short yet readable code.
             <br />
-            <br />
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
-            veniam numquam itaque nemo autem obcaecati nisi molestias at
-            delectus vero? Tempora quae eligendi maiores aliquid laudantium
-            unde! Deserunt officia unde, autem animi quae illo laboriosam
-            laborum, ullam nobis distinctio provident!
+            <br />I believe in effective communication, honesty and
+            adaptability. I love to brainstorm possible ideas with others,
+            however I can also crack problems on my own. I like to travel, play
+            any kind of sport and create new things.
           </p>
         </div>
         <div id="about-buttons-container">

@@ -185,6 +185,7 @@ p {
   background-color: white;
   padding: 40px;
   margin-bottom: 20px;
+  line-height: 25px;
 }
 
 #about-buttons-container {
@@ -286,6 +287,11 @@ video {
 .a-buttons {
   color: white;
   text-decoration: none;
+}
+
+.description-p {
+  text-shadow: none;
+  line-height: 20px;
 }
 
 .description-title {
