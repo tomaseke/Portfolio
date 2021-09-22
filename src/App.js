@@ -5,6 +5,8 @@ import Project from "./Project";
 import About from "./About";
 import projects from "./projects.js";
 
+// to trigger redeploy for netlify
+
 function App() {
   return (
     <>
